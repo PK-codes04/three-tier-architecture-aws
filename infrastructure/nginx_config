@@ -4,6 +4,11 @@ server {
     root /usr/share/nginx/html;
     index index.html;
 
+    location = /loaderio-f48502712a8d203994296879c68250fe {
+        default_type text/plain;
+        return 200 'loaderio-f48502712a8d203994296879c68250fe';
+    }
+
     # Static content
     location ~* \.(jpg|jpeg|png|gif|ico|css|js)$ {
         expires 30d;
