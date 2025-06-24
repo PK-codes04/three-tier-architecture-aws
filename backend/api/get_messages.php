@@ -10,7 +10,7 @@ try {
     $conn = getDatabaseConnection();
     
     // Query to get messages
-    $query = "SELECT * FROM messages ORDER BY created_at DESC LIMIT 10";
+    $query = "SELECT * FROM messages ORDER BY created_at DESC LIMIT 3";
     $stmt = $conn->prepare($query);
     $stmt->execute();
     
